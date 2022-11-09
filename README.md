@@ -1,29 +1,11 @@
-![Image description](https://i1.faceprep.in/ProGrad/face-logo-resized.png)
 
-# ProGrad Lab | Higher Order Function
+# Kalvium Lab | Higher Order Function
 
 In the previous lesson, we have learnt some useful Higher Order Functions to manipulate arrays & objects. Now, let's put them to use in this lab.
 
-## What should you do
-```
-Fork this repo
-Clone this repo
-Practice JavaScript - Higher order functions
-```
-
-## How To Submit
-```
-Upon completion, run the following commands:
-
-git add .
-git commit -m "ProGrad ID"
-git push origin master
-
-And finally, create a pull request so your ProGrad Mentor (PM) can review your work.
-```
-
-# Instructions
-Create app.js and index.html. Write the code for the following functionalities given below and see the output in console.
+# Starter Code:
+The src/app.js contains three arrays for you, which you'll be using for this entire lab.
+The arrays are as follows -> foods, numberArray, myArray.
 
 ### Function #1: Array Slice
 
@@ -35,7 +17,7 @@ const foods = [pizza, burger, fingerChips, donuts, springRoll];
 Create a new array named as `modifiedFood` and also create a `slice()` method.The `slice()` method should return the selected elements in an array, as a new array object. This method starts slicing the array from the given start argument and ends the slicing operation one element before the given second argument.
 
 ```
-Expected output: [burger, fingerShips, donuts]
+Expected output: [burger, fingerChips, donuts]
 ```
 
 
@@ -43,7 +25,7 @@ Expected output: [burger, fingerShips, donuts]
 
 The splice() method adds/removes items to/from an array, and returns the removed item(s).
 
-Take an example array. Create a new array named as `modifiedFood` and use `splice()` to get the below expected output. Elements are added to the original array.
+Take an example array. Create a function `spliced()` and use `splice()` within this function to get the below expected output. Elements are added to the original array.
 
 ```
 const foods = [pizza, burger, fingerShips, donuts, springRoll];
@@ -56,15 +38,16 @@ Expected output: [pizza, burger, noodles, icecream, fingerShips, donuts, springR
 
 Filter is an array method. It accepts a test function as an argument and returns a new array with only the elements for which the test function returns true.
 
-Now, create a function `isEven()` which takes `numberArray` as argument and _returns all even numbers from the given array_.
+Now, create a function `checkNumber()` which takes `numberArray` and `operation` as arguments and _returns an array after performing the respective operation_.
 
 ```
 Take numberArray as
 
 const numberArray = [12,324,213,4,2,3,45,4234];
 ```
-
-Next, let's build on top of this. Create another functon called `isPrime()` with takes same `numberArray` as argument and _returns all prime numbers from the above given array_.
+There are 2 operations --> 
+1. To check whether the number is even or not -> for this create a function as `isEven()` which takes `number` as the argument and _returns whether the function is even or not_.
+2. To check whether the number is a prime number or not. Create another functon called `isPrime()` with takes same `number` as argument and _returns whether the function is prime or not_.
 
 
 ### Function #4: Reject
@@ -78,7 +61,7 @@ Create a function `nonPrime()` which takes `numberArray` as argument and _return
 
 When defining short functions, it's convenient to use an alternative syntax called lambda function that allows us to define anonymous functions in a more compact way: _( /*arguments*/ ) => { /*code*/ }_. If our function is only a return statement, we can even strip the curly brackets and avoid writing return: _( /*arguments*/ ) => /*value to return*/_.
 
-Now, rewrite the function `isEven()` by using the concept of Lambda Function.
+Now, rewrite the function `isEven()` and name it as `isEvenUsingLambda`--> by using the concept of Lambda Function.
 
 
 ### Function #6: Map
@@ -98,10 +81,10 @@ Reduce is the last higher order function we are going to discuss and it's also t
 
 Reduce takes a callback function and a starting value. The callback function takes as arguments an accumulator and the value of the current element of the array and returns the accumulator to be used in the next cycle. The values returned from the last call of the callback function is the value returned by `reduce`.
 
-Create a function `multiply()` which takes an argument of `myArray` which holds the values as `[2, 3, 5, 10]` and _returns multiplication value of all numbers in the given array_.
+Create a function `multiply()` which takes an argument of `myArray` and _returns multiplication value of all numbers in the given array_.
 
 Let's expand our knowledge by `implementing map with reduce`.
 
-Take the function explained in the above task of `map` and try is by implementing the same by using `reduce`.
+Take the function explained in the above task - (task 6) of `map` and try it by implementing the same by using `reduce`. Create a function `sumOfSquares()`, and take `myArray` as the argument, and return the sum of squares of the given array - `myArray`.
 
-Happy Coding ProGrad ❤️
+Happy Coding Kalvium ❤️
