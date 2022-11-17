@@ -1,4 +1,4 @@
-![Logo-nav](https://user-images.githubusercontent.com/109285740/200873085-bf27ac66-dc82-4145-8324-c11ea371a898.png)
+![Logo-nav](https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/Kalvium-Logo.png)
 
 # Kalvium Lab | Higher Order Function
 
